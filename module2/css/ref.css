@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+	color:#c2554e;
+}
+p{
+	padding:50px;
+	text-align: justify;
+}
+
+#box1 {
+	
+	
+	background:#edccea;
+	border: 3px solid black ;
+	float:left;
+	width:30%;
+	height:200px;
+	margin:5px;
+	position: relative;
+	padding:10px;
+}
+
+#box2 {
+	
+	background:#edccea;
+	border: 3px solid black ;
+	float:left;
+	width:30%;
+	height:200px;
+	margin:5px;
+	padding:10px;
+
+position: relative;
+		
+}
+
+#box3 {
+	
+	background:#edccea;
+	border: 3px solid black ;
+	float:left;
+	width:30%;
+	height: 200px;
+	margin:5px;
+	
+	position: relative;
+	
+	
+}
+
+
+ div.top {
+	color:solid red;
+	
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  right: 0px;
+  border: 1px solid black;
+  width:100px;
+  height: 40px;
+  text-align: center;
+
+}
+
+#box3 >div.top
+{
+	background:#bebbf2;
+	font-weight:bold;
+}
+
+#box2 > div.top 
+{
+	background:#62ccc7;
+	font-weight:bold;
+}
+
+#box1 > div.top
+{
+	background:#8ee8a0;
+	font-weight:bold;
+}
+
+@media (min-width: 992px) 
+{
+  #box1,#box2,#box3
+  {
+    width: 30%;
+    margin:10px;
+    
+  }
+
+}
+
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media  (min-width:768px) and (max-width: 991px) 
+{
+  #box1,#box2
+  {
+    width: 45%;
+    
+  }
+  #box3 
+  {
+  		width:90%;
+  		
+  }
+
+}
+
+@media ( max-width:767px) 
+{
+  #box1,#box2,#box3
+  {
+
+    width: 80%;
+    float:none;
+    margin:30px;
+	  }
+  
+
+}
+
